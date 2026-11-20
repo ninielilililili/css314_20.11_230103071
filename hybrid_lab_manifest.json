@@ -1,0 +1,48 @@
+{
+  "github_username": "ninielilililili",
+  "instance_seed": 4254597832565062221,
+  "gpu_uuid": "GPU-a8822853-2c1a-7a80-66fd-86da498a959e",
+  "cpu_signature": "x86_64::2",
+  "cpu_line_bytes": 64,
+  "shm_aligned_64": true,
+  "kappa_max": 1.4999885715115697,
+  "dx": 0.001949317738791423,
+  "dt": 5.699802896904668e-07,
+  "dt_max": 6.333114329894074e-07,
+  "cfl_ok": true,
+  "gpu_serialized_ms": 2353.6053499999525,
+  "gpu_overlapped_ms": 1378.8575390000233,
+  "max_diff": 0.0,
+  "energy_serialized": {
+    "0": 0.031415926535791415,
+    "100": 0.031207918900673256,
+    "200": 0.031003038661003,
+    "300": 0.030801214269522294
+  },
+  "energy_overlapped": {
+    "0": 0.031415926535791415,
+    "100": 0.031207918900673256,
+    "200": 0.031003038661003,
+    "300": 0.030801214269522294
+  },
+  "shm_ms": {
+    "1": 529.7940290000724,
+    "8": 156.1000059999742,
+    "16": 153.2904950000784
+  },
+  "false_sharing_ratio": 3.393939837517751,
+  "stride16_vs_stride8": 0.9820018520697799,
+  "ptx_audit": {
+    "st.shared.f64": 5,
+    "ld.shared.f64": 5,
+    "bar.sync": 1
+  },
+  "llvm_audit": {
+    "load_i64": 11,
+    "store_i64": 9,
+    "ir_lines": 279
+  },
+  "mpi_ranks": 4,
+  "stencil_steps": 300,
+  "shm_iters": 40000000
+}
