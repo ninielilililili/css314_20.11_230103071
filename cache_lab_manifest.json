@@ -1,0 +1,83 @@
+{
+  "git_username": "ninielilililili",
+  "instance_seed": 11600058837515457330,
+  "cpu_model": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "logical_cores": 24,
+  "cache_line_size": 64,
+  "affinity_pinning": "unsupported",
+  "num_threads": 4,
+  "iterations_per_thread": 60000000,
+  "timings": {
+    "A_contiguous": {
+      "stride": 1,
+      "stride_bytes": 8,
+      "elapsed_ns": 737388400,
+      "ns_per_update": 12.289806666666667,
+      "ctx_voluntary": -1,
+      "ctx_involuntary": -1
+    },
+    "B_half_line": {
+      "stride": 4,
+      "stride_bytes": 32,
+      "elapsed_ns": 576274900,
+      "ns_per_update": 9.604581666666666,
+      "ctx_voluntary": -1,
+      "ctx_involuntary": -1
+    },
+    "C_line_padded": {
+      "stride": 8,
+      "stride_bytes": 64,
+      "elapsed_ns": 341366800,
+      "ns_per_update": 5.689446666666667,
+      "ctx_voluntary": -1,
+      "ctx_involuntary": -1
+    },
+    "D_prefetch_safe": {
+      "stride": 16,
+      "stride_bytes": 128,
+      "elapsed_ns": 350687400,
+      "ns_per_update": 5.84479,
+      "ctx_voluntary": -1,
+      "ctx_involuntary": -1
+    },
+    "private_register": {
+      "stride": 8,
+      "stride_bytes": 64,
+      "elapsed_ns": 773600,
+      "ns_per_update": 0.012893333333333333,
+      "ctx_voluntary": -1,
+      "ctx_involuntary": -1
+    }
+  },
+  "slowdown_stride1_vs_stride8": 2.160105786502964,
+  "slowdown_stride4_vs_stride8": 1.6881398542564772,
+  "ratio_stride16_vs_stride8": 1.0273037682633461,
+  "ratio_stride8_vs_private": 441.270423991727,
+  "ratio_stride1_vs_private": 953.1907962771459,
+  "expected_finals": [
+    4260000000,
+    5580000000,
+    6780000000,
+    8100000000
+  ],
+  "bit_exact_parity": true,
+  "parity_per_layout": {
+    "A_contiguous": true,
+    "B_half_line": true,
+    "C_line_padded": true,
+    "D_prefetch_safe": true,
+    "private_register": true
+  },
+  "llvm_store_i64": 5,
+  "llvm_load_i64": 12,
+  "llvm_python_fallback_detected": false,
+  "llvm_audit_passed": true,
+  "gil_experiment": {
+    "threads_1_ns": 77346000,
+    "threads_1_total_updates": 1000000,
+    "threads_4_ns": 262918500,
+    "threads_4_total_updates": 4000000,
+    "slowdown_4_vs_1_per_total_work": 0.8498128539290978
+  },
+  "verification_passed": true
+}
